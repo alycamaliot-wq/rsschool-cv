@@ -2,33 +2,156 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-body{
-    background-color: #F4F6F8;
-}
+/* Header */
 
-header{
-    display: flex;
-    height: 65px;
-    background-color: #0E1726;
+header {
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
+  height: 5rem;
+  background-color: #0e1726;
+    transition: .5s;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo{
     color: #fff;
-    justify-content: space-around;
-    align-items: center;
+}
+.header.scrolled {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.navigation {
+  display: flex;
+  align-items: center;
+}
+.navigation-lists {
+  position: relative;
+  list-style: none;
+  margin: 0 20px;
+}
+.navigation-lists a {
+  color: #797979;
+  transition: all 0.3s;
+}
+.navigation-lists.nav-active a {
+  color: #fff;
+}
+.navigation-lists:hover a {
+  color: #fff;
+}
+.navigation-lists:hover::after {
+  content: "";
+  left: -5px;
+  bottom: -10px;
+  position: absolute;
+  background-color: lightblue;
+  height: 2px;
+  width: 0%;
+  animation-name: navigationAnchor;
+  animation-duration: 0.8s;
 }
 
-.navigation{
+@keyframes navigationAnchor {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 145%;
+  }
+}
+
+.navigation-show-btn {
+  display: none;
+  background: transparent;
+  border: none;
+  font-size: 2rem;
+  position: absolute;
+  top: 1.5rem;
+  right: 5%;
+  color: #fff;
+}
+.navigation-hide-btn {
+  display: none;
+  background: transparent;
+  border: none;
+  font-size: 2rem;
+  position: absolute;
+  top: 1.5rem;
+  right: 5%;
+  color: #fff;
+}
+
+/* Header ends */
+
+/* Responsive Header Styles */
+
+@media only screen and (max-width: 850px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
+    padding: 0;
+    height: auto;
+  }
+  .logo {
+    margin: 1.5rem;
+  }
+  nav {
+    width: 100%;
+  }
+  .navigation {
+    display: none;
+    width: 100%;
+  }
+  .navigation-lists {
+    width: 90%;
+    margin: 1rem 5%;
+  }
+  .hire-me-btn-a {
+    width: 100%;
+  }
+  .navigation-show-btn {
     display: flex;
-    align-items: center;
-    list-style: none;
-    gap: 24px;
-    height: 65px;
-}
-
-.navigation-item a{
-    text-decoration: none;
-    color: #797979;
-}
-.navigation-item a:hover{
-    color: #fff;
+  }
+  .navigation-btn-show {
+    display: block;
+  }
+  .navigation-btn-hide {
+    display: none;
+  }
+  .navigation-hide {
+    display: flex;
+    animation-name: navigationHide;
+    animation-duration: 0.5s;
+  }
+  @keyframes navigationHide {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(-1000%);
+    }
+  }
+  .navigation-show {
+    display: flex;
+    animation-name: navigationShow;
+    animation-duration: 0.5s;
+  }
+  @keyframes navigationShow {
+    from {
+      transform: translateY(-1000%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
 }
