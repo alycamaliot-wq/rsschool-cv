@@ -251,19 +251,19 @@ aside > div {
 .lang-65 {
   height: 10px;
   border-radius: 50px;
-  width: 70%;
+  width: 65%;
   background-color: blue;
 }
 .lang-75 {
   height: 10px;
   border-radius: 50px;
-  width: 85%;
+  width: 75%;
   background-color: blue;
 }
 .lang-15 {
   height: 10px;
   border-radius: 50px;
-  width: 30%;
+  width: 15%;
   background-color: blue;
 }
 
@@ -430,6 +430,75 @@ aside > div {
   text-decoration: underline;
 }
 
+/* Code example */
+
+#code-example {
+  margin-top: 35px;
+  padding-top: 15px;
+}
+
+#code-example h2 {
+  font-size: 22px;
+  color: blue;
+  text-transform: uppercase;
+  border-bottom: 1px solid #797979;
+  padding-bottom: 10px;
+  margin-bottom: 12px;
+}
+
+#code-example > p {
+  color: #4b5563;
+  font-size: 15px;
+  margin-bottom: 12px;
+}
+
+#code-example > p a {
+  color: #2563eb;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+#code-example > p a:hover {
+  text-decoration: underline;
+}
+
+#code-example pre {
+  background-color: #1e1e1e; 
+  color: #d4d4d4;
+  padding: 16px 20px;
+  border-radius: 8px;
+  border: 1px solid #2d3748;
+  overflow-x: auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  position: relative;
+}
+
+#code-example code {
+  font-family: "Consolas", "Fira Code", "Courier New", Courier, monospace;
+  font-size: 14px;
+  line-height: 1.6;
+  tab-size: 2;
+  white-space: pre;
+}
+
+#code-example pre::-webkit-scrollbar {
+  height: 8px;
+}
+
+#code-example pre::-webkit-scrollbar-track {
+  background: #1e1e1e;
+  border-radius: 0 0 8px 8px;
+}
+
+#code-example pre::-webkit-scrollbar-thumb {
+  background: #3a3f4d;
+  border-radius: 4px;
+}
+
+#code-example pre::-webkit-scrollbar-thumb:hover {
+  background: #525866;
+}
+
 
 /* Footer */
 
@@ -449,7 +518,7 @@ footer > div{
 
 /* Responsive Header Styles */
 
-@media only screen and (nax-width: 1200px) {
+@media only screen and (max-width: 1200px) {
   .exp-main-title {
     grid-template-columns: 1fr;
   }
@@ -492,7 +561,7 @@ footer > div{
     height: auto;
   }
   #container {
-    grid-template-columns: 1fr; /* Stacks aside on top or bottom */
+    grid-template-columns: 1fr;
   }
   nav {
     width: 100%;
@@ -614,6 +683,17 @@ footer > div{
   .project-content {
     padding: 14px 16px 18px;
   }
+
+  /* Code example */
+
+  #code-example pre {
+    padding: 14px 16px;
+  }
+
+  #code-example code {
+    font-size: 13px;
+    line-height: 1.5;
+  }
 }
 
 @media only screen and (max-width: 700px) {
@@ -629,5 +709,16 @@ footer > div{
   }
   .footer-links{
     justify-content: space-between;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #code-example pre {
+    padding: 12px;
+    border-radius: 6px;
+  }
+
+  #code-example code {
+    font-size: 12px;
   }
 }
