@@ -430,6 +430,23 @@ aside > div {
   text-decoration: underline;
 }
 
+
+/* Footer */
+
+footer{
+  border-top: 1px solid #797979;
+  min-height: 10vh;
+  padding: 2% 3%;
+  display: flex;
+  justify-content: space-between;
+}
+footer > div{
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+
 /* Responsive Header Styles */
 
 @media only screen and (nax-width: 1200px) {
@@ -596,5 +613,21 @@ aside > div {
 
   .project-content {
     padding: 14px 16px 18px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  footer{
+    flex-direction: column-reverse;
+    gap: 24px;
+  }
+  .footer-title{
+    padding-top: 15px;
+    border-top: 1px solid black;
+    display: flex;
+    justify-content: center;
+  }
+  .footer-links{
+    justify-content: space-between;
   }
 }
