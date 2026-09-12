@@ -5,13 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mamadalixon's cv</title>
     <link rel="stylesheet" href="./style.css" />
-    <link rel="stylesheet" href="./test.css">
+    <link rel="stylesheet" href="./test.css" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css"
-      integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
   </head>
   <body>
@@ -33,41 +30,197 @@
         </ul>
       </nav>
     </header>
-    
+
     <!-- Hero section -->
     <section id="hero">
       <div class="h-first-part">
-          <div class="h-img">
-            <img src="./images/me.jpg" alt="Author Picture">
-          </div>
-          <div class="h-info">
-            <h1 class="h-name">Mamadalixon Ismonjonov</h1>
-            <h2 class="h-title">Web Developer</h2>
-            <p class="h-about-me">Passionate web developer with 1+ years of experience in building modern, responsive and user-friendly web applications. Skilled in both frontend and backend technologies</p>
-          </div>
-          <div class="h-cv-file">
-            <a href="./files/Muhammadali_Ismonjonov_Resume.pdf  " download="./files/Muhammadali_Ismonjonov_Resume.pdf">
-              <button class="h-btn">Download CV</button>
-            </a>
-          </div>
+        <div class="h-img">
+          <img src="./images/me.jpg" alt="Author Picture" />
+        </div>
+        <div class="h-info">
+          <h1 class="h-name">Mamadalixon Ismonjonov</h1>
+          <p class="h-title">Web Developer</p>
+          <p class="h-about-me">
+            Passionate web developer with 1+ years of experience in building
+            modern, responsive and user-friendly web applications. Skilled in
+            both frontend and backend technologies
+          </p>
+        </div>
+        <div class="h-cv-file">
+          <a
+            href="./files/Muhammadali_Ismonjonov_Resume.pdf  "
+            download="./files/Muhammadali_Ismonjonov_Resume.pdf"
+          >
+            <button class="h-btn">Download CV</button>
+          </a>
+        </div>
       </div>
       <div class="h-line"></div>
       <div class="h-second-part">
-        <p class="h-location"> <i class="fa-solid fa-location-dot"></i> Namangan, Uzbekistan</p>
-        <p class="h-email"><i class="fa-regular fa-envelope"></i> Email: alycamaliot@gmail.com</p>
-        <p class="h-number"><i class="fa-solid fa-phone"></i> Number: +998 97 977 86 96</p>
+        <p class="h-location">
+          <i class="fa-solid fa-location-dot"></i> Namangan, Uzbekistan
+        </p>
+        <p class="h-email">
+          <i class="fa-regular fa-envelope"></i> Email: alycamaliot@gmail.com
+        </p>
+        <p class="h-number">
+          <i class="fa-solid fa-phone"></i> Number: +998 97 977 86 96
+        </p>
       </div>
     </section>
 
     <!-- container -->
     <div id="container">
       <aside>
-        
+        <!-- About me -->
+        <div id="about-me">
+          <h3><i class="fa-regular fa-user"></i> About me</h3>
+          <p>
+            I'm a self-taught Software Engineer who loves to work in frontend
+            and backend. Besides that, I'm good at creating fascinating UX/UI
+            and backend services.
+          </p>
+        </div>
+
+        <!-- Skills -->
+        <div id="skills">
+          <h3>&lt;/&gt;Skills</h3>
+
+          <div>
+            <p class="skill-sides">Frontend</p>
+            <ul class="skills">
+              <li>HTML5</li>
+              <li>CSS / SCSS</li>
+              <li>JavaScript (ES6+)</li>
+              <li>ReactJS</li>
+              <li>ViteJS</li>
+            </ul>
+          </div>
+
+          <div>
+            <p class="skill-sides">Backend</p>
+            <ul class="skills">
+              <li>NodeJS</li>
+              <li>ExpressJS</li>
+              <li>Java</li>
+              <li>REST APIs</li>
+            </ul>
+          </div>
+
+          <div>
+            <p class="skill-sides">Tools & Others</p>
+            <ul class="skills">
+              <li>Git / GitHub</li>
+              <li>Docker</li>
+              <li>Postman</li>
+              <li>MongoDB</li>
+              <li>VS Code</li>
+              <li>IntelliJ IDEA</li>
+              <li>PowerShell</li>
+              <li>Vercel</li>
+              <li>Figma</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Languages -->
+        <div id="languages">
+          <h3><i class="fa-solid fa-globe"></i> Languages</h3>
+          <!-- Languages -->
+          <div>
+            <div class="lang-info">
+              <p>Uzbek</p>
+              <p class="a79">Native</p>
+            </div>
+            <div class="lang-line lang-full"></div>
+          </div>
+          <div>
+            <div class="lang-info">
+              <p>Russian</p>
+              <p class="a79">Intermediate</p>
+            </div>
+            <div class="lang-line">
+              <div class="lang-65"></div>
+            </div>
+          </div>
+          <div>
+            <div class="lang-info">
+              <p>English</p>
+              <p class="a79">Advanced</p>
+            </div>
+            <div class="lang-line">
+              <div class="lang-75"></div>
+            </div>
+          </div>
+          <div>
+            <div class="lang-info">
+              <p>German</p>
+              <p class="a79">Elementary</p>
+            </div>
+            <div class="lang-line">
+              <div class="lang-15"></div>
+            </div>
+          </div>
+          <!-- Languages -->
+        </div>
+
+        <!-- Social links -->
+        <div>
+          <h3>Social Links</h3>
+          <p>
+            <a href="https://github.com/alycamaliot-wq">
+              <i class="fa-brands fa-github"></i> github.com/alycamaliot-wq</a
+            >
+          </p>
+          <p>
+            <a
+              href="https://www.linkedin.com/in/mamadalixon-ismonjonov-255b2a328/"
+              ><i class="fa-brands fa-linkedin"></i>
+              linkedin.com/in/mamadalixon-ismonjonov-255b2a328</a
+            >
+          </p>
+          <p>
+            <a href="https://t.me/muha3madal1"
+              ><i class="fa-brands fa-telegram"></i> @muha3madali</a
+            >
+          </p>
+          <p>
+            <a href="https://leetcode.com/u/iKWBmvmDGP/"
+              ><svg
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="currentColor"
+              >
+                <path
+                  d="M16.102 17.93l-2.697 2.607c-.466.467-1.111.662-1.823.662s-1.357-.195-1.824-.662l-4.332-4.363c-.467-.467-.702-1.15-.702-1.863 0-.713.235-1.357.702-1.824l4.319-4.38c.467-.467 1.125-.645 1.837-.645s1.357.178 1.823.645l2.697 2.607c.25.25.662.25.912 0l1.206-1.206c.25-.25.25-.662 0-.912l-2.697-2.607c-1.002-1.002-2.383-1.468-3.944-1.468s-2.942.466-3.944 1.468l-4.319 4.38c-1.002 1.002-1.468 2.383-1.468 3.944s.466 2.942 1.468 3.944l4.332 4.363c1.002 1.002 2.383 1.468 3.944 1.468s2.942-.466 3.944-1.468l2.697-2.607c.25-.25.25-.662 0-.912l-1.206-1.206c-.25-.25-.662-.25-.912 0zM20.811 13.01H10.666c-.356 0-.645.289-.645.645v1.706c0 .356.289.645.645.645h10.145c.356 0 .645-.289.645-.645v-1.706c0-.356-.289-.645-.645-.645z"
+                />
+              </svg>
+              Leetcode</a
+            >
+          </p>
+        </div>
       </aside>
-      <main></main>
+      <main>
+        <div id="experience">
+          <h3>experience</h3>
+          <!-- Backend -->
+          <div class="exp">
+            <div class="exp-main-title">
+              <p class="exp-title">Backend Developer (Freelance)</p>
+              <p class="a79">August 2026 - present</p>
+              <p>XOLT.uz CRM platform made for educational purpose</p>
+              <p class="a79">Uzbekistan</p>
+            </div>
+            <div>
+              
+            </div>
+          </div>
+        </div>
+      </main>
     </div>
-
-
 
     <script src="./app.js"></script>
   </body>
