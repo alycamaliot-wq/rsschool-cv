@@ -1,35 +1,23 @@
-.exp{
-    min-height: 15vh;
-    border-left: 1px solid blue;
-    padding: 0 2%;
-    margin: 20px 0;
-}
-.exp-main-title{
-    display: grid;
-    justify-content: space-between;
-    grid-template-columns: 3fr 1fr;
-}
-.exp-title{
-    font-size: 22px;
-    color: blue;
-    position: relative;
-}
-.exp > .a79{
-    text-align: right;
-} 
-.exp-title:before{
-    position: absolute;
-    content: "";
-    top: 20%;
-    left: -3.5%;
-    height: 15px;
-    width: 15px;
-    border-radius: 50px;
-    background-color: blue;
+
+
+@media only screen and (nax-width: 1200px) {
+  
 }
 @media only screen and (max-width: 1000px) {
-
+  
 }
-@media only screen and (max-width: 850px) {
 
+@media only screen and (max-width: 850px) {
+  #container {
+    grid-template-columns: 1fr; /* Stacks aside on top or bottom */
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr; /* Single column view on smaller mobile screens */
+    gap: 18px;
+  }
+
+  .project-content {
+    padding: 14px 16px 18px;
+  }
 }
