@@ -26,7 +26,10 @@ h3 {
 .cb {
   color: blue;
 }
-
+.rs-logo{
+  height: 50px;
+  width: 50px;
+}
 /* Header */
 
 header {
